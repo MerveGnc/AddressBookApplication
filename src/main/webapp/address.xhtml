@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+
+<head>
+    <title>Lütfen Giriş Yapınız</title>
+    <style>
+        body {
+            background-color: powderblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: LightSeaGreen;
+        }
+        label {
+            color: LightSeaGreen;
+        }
+        p{
+            color:Teal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+        <h1>Giriş Yap</h1>
+        <form action="servlet1" method="post"> 
+            <label for="username"> Kullanıcı Adı:</label>
+            <input type="text" id="username" name="username"/><br/>
+            <label for="password">Şifre:</label>
+            <input type="password" id="password" name="password"/><br/>
+            <input type="submit" value="Giriş Yap"/> 
+    
+        </form>
+        <p>Eğer üye değilseniz lütfen <a href="register.xhtml">kayıt olun</a>.</p>
+        
+        
+    </div>
+</body>
+</html>

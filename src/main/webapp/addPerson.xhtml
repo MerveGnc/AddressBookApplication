@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+    <title>Adres Kayıt Uygulaması - Kişi Ekle</title>
+      <style>
+        body {
+            background-color: powderblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: LightSeaGreen;
+        }
+        label {
+            color:LightSeaGreen;
+        }
+         p{
+            color:Teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <h1>Kişi Ekle</h1>
+
+    <form method="post" action="personServlet">
+        <label for="name">Ad:</label>
+        <input type="text" id="name" name="name"/><br/><br/>
+
+        <label for="surname">Soyad:</label>
+        <input type="text" id="surname" name="surname"/><br/><br/>
+
+        <label for="phone">Telefon:</label>
+        <input type="text" id="phone" name="phone"/><br/><br/>
+
+        <label for="address">Adres:</label>
+        <textarea id="address" name="address"/><br/>
+
+        <label for="age">Yaş:</label>
+        <input type="number" id="age" name="age"/><br/><br/>
+
+        <input type="submit" value="Kaydet"/>
+    </form>
+    <br/>
+    <p>Çıkış yapmak için <a href="address.xhtml">tıklayınız.</a></p>
+     </div>
+</body>
+</html>
+
